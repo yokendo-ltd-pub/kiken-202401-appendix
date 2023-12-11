@@ -1,0 +1,36 @@
+\documentclass[fleqn]{ltjsarticle}
+\usepackage{lltjext}
+\usepackage{luatexja-fontspec}
+\usepackage{luatexja-otf}
+\usepackage{tikz}
+\usetikzlibrary{intersections,calc,arrows.meta}
+\usepackage{unicode-math}
+\setmainfont{XITS}
+\setmathfont{XITS Math}
+\setmathfont{TeX Gyre DejaVu Math}[range={bb,bbit}, Scale=MatchUppercase]
+\usepackage[ms-hg]{luatexja-preset}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\DeclareSIUnit{\kgf}{\text{kgf}}
+\DeclareSIUnit{\millimetre}{\milli\metre}
+\DeclareSIUnit{\centimetre}{\centi\metre}
+\sisetup{
+  range-phrase=\text{\,Å`\,},
+  range-units=single,
+  per-mode=symbol,
+  print-unity-mantissa=false,
+  input-digits=0123456789L/\pi
+}
+\usepackage{setspace}
+\usepackage{mhchem}
+\usepackage{bm}
+\newcommand{\vect}[1]{{\bm{#1}}}
+\newcommand{\diff}{{\,\mathrm{d}}}
+\newcommand{\sbt}[1]{\tikz[baseline=-1ex]{\fill (0,0) circle [radius=#1];}}
+\let\%\relax \DeclareFontFamily{OT1}{pxr}{} \DeclareFontShape{OT1}{pxr}{m}{n}{<->pxr}{} \DeclareSymbolFont{letA}{OT1}{pxr}{m}{n} \DeclareMathSymbol{\%}{0}{letA}{`\%}
+\newcommand{\ctext}[1]{\raisebox{0.2ex}{\textcircled{\scriptsize{#1}}}}
+\pagestyle{empty}
+\begin{document}
+\footnotesize
+<r>
+\end{document}
